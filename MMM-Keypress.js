@@ -36,7 +36,7 @@ Module.register("MMM-Keypress", {
       this.sendNotification(matchingNotification.notification, matchingNotification.payload);
       if (matchingNotification.notification == "CURRENT_PROFILE")
       {
-        //this.sendNotification("REMOTE_ACTION", {action: "MONITORON"}); //always switch on monitor on profile change
+        this.sendNotification("REMOTE_ACTION", {action: "MONITORON"}); //always switch on monitor on profile change
       }
     }
   }
